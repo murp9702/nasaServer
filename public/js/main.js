@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var dangerousAsteroidInfo;
 
-  
+
   //choose a random asteroid picture
     function randomPictureGenerator() {
     var randomNumber = Math.floor(Math.random()*12);
@@ -20,7 +20,7 @@ $(document).ready(function(){
     }
 
   $('#submit').on('submit', function(event){
-    console.log("click");
+    $(".asteroid").remove()
     event.preventDefault();
     var postData = {
       startdate: $('#startdate').val(),
